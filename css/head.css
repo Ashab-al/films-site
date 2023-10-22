@@ -1,0 +1,59 @@
+
+.logo {
+    position: fixed;
+    left: 10px;
+    top: 5px;
+
+}
+
+.headers {
+    display: flex;
+    justify-content: flex-end
+
+}
+
+
+.logo {
+    max-width: 100px;
+    padding: 0;
+}
+
+.logo-modal {
+    max-width: 80px;
+}
+
+.logo-modal:hover {
+    background-color: green;
+    border-radius: 100%;
+}
+
+.route {
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.email, .password, .name, .password-confirmation {
+    margin-bottom: 10px;
+}
+
+.btn-entrance {
+    cursor: pointer;
+    background-color: white;
+    font-weight: 900;
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px 30px 5px 30px;
+    border: 1px solid green;
+}
+
+ 
+.box-with-shadow:hover {
+    box-shadow: 5px 5px 5px 2px rgba(0, 115, 44, 0.145);
+  }
+
+.profile {
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+}

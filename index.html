@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/head.css">
+    <script src="js/modal_window.js" defer></script>
+    <title>Document</title>
+</head>
+<body>
+    <section class="header">
+        <div class="headers">
+            <img src="img/logo.png" alt="" class="logo">
+            <a href="profile.html" class="route profile">Профиль</a>
+            <h3 class="route entrance">Вход</h3>
+            <h3 class="route registration">Регистрация</h3>
+        </div>
+    </section>
+
+    <section class="section">
+        <h1 class="section__title">Заголовок</h1>
+    </section>
+
+    <div class="modal modal1">
+        <div class="modal__main">
+            <img src="img/logo.png" alt="" class="logo-modal">           
+            <form>
+                <h2 class="modal__title">Войти</h2>
+                <div class="modal__container">
+                    <div class="email">
+                        <span for="email">Почта:</span>
+                        <input type="text" id="login" placeholder="example@gmail.com">                
+                    </div>
+                    <div class="password">
+                        <span for="pin">Пароль:</span>
+                        <input type="password" id="pin" placeholder="1234">    
+                    </div>              
+                    <button class="btn-entrance box-with-shadow">Войти</button>
+                </div>
+            </form>
+            <button class="modal__close">&#10006;</button>
+        </div>
+    </div>
+
+    <div class="modal modal2">
+        <div class="modal__main">
+            <img src="img/logo.png" alt="" class="logo-modal">           
+            <form>
+                <h2 class="modal__title">Регистрация</h2>
+                <div class="modal__container">
+                    <div class="name">
+                        <span for="name">Имя:</span>
+                        <input type="text" id="name" placeholder="Ваше имя">                
+                    </div>
+
+                    <div class="email">
+                        <span for="email">Почта:</span>
+                        <input type="text" id="login" placeholder="example@gmail.com">                
+                    </div>
+                    <div class="password">
+                        <span for="pin">Пароль:</span>
+                        <input type="password" id="pin" placeholder="1234">    
+                    </div>   
+                    <div class="password-confirmation">
+                        <span for="pin">Повторите пароль:</span>
+                        <input type="password-confirmation" id="pin-conf" placeholder="1234">    
+                    </div>             
+                    <button class="btn-entrance box-with-shadow">Войти</button>
+                </div>
+            </form>
+            <button class="modal__close">&#10006;</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
