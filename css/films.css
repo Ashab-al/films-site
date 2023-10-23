@@ -1,0 +1,51 @@
+.films {
+    display: flex;
+    flex-flow: wrap ;
+    justify-content: space-evenly;
+
+}
+
+.film-img {
+    max-width: 100px;
+}
+
+.film {
+    width: 200px; 
+    padding: 10px; 
+    font-size: 20px; 
+    word-wrap: break-word; 
+    margin-bottom: 12px;
+    border-radius: 12px;
+    background-color: #083f18;
+}
+
+.add-favorites {
+    vertical-align:bottom;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    width: 100px;
+    height: 50px;
+    font-weight: 300;
+    border-radius: 5px;
+    border: 1px solid green;
+}
+
+.add-favorites:hover {
+    box-shadow: 5px 5px 5px 2px rgba(173, 173, 173, 0.145);
+}
+
+.filter-button {
+    cursor: pointer;
+    width: 200px;
+    height: 40px;
+    margin: 20px;
+    font-size: 18px;
+    border-radius: 7px;
+    border: 2px solid green;
+    background-color: rgb(255, 255, 255);
+}
+
+.filter-button:hover {
+    box-shadow: 5px 5px 5px 2px rgba(173, 173, 173, 0.145);
+}

@@ -51,3 +51,9 @@ modalController({
   btnOpen: '.registration',
   btnClose: '.modal__close'
 });
+
+modalController({
+  modal: '.modal-profile',
+  btnOpen: '.profile',
+  btnClose: '.modal__close'
+});

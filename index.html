@@ -6,21 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/head.css">
+    <link rel="stylesheet" href="css/films.css">
     <script src="js/modal_window.js" defer></script>
+    <script src="js/films.js"></script>
     <title>Document</title>
 </head>
 <body>
     <section class="header">
         <div class="headers">
             <img src="img/logo.png" alt="" class="logo">
-            <a href="profile.html" class="route profile">Профиль</a>
+            <a class="route profile">Профиль</a>
             <h3 class="route entrance">Вход</h3>
             <h3 class="route registration">Регистрация</h3>
         </div>
     </section>
 
     <section class="section">
-        <h1 class="section__title">Заголовок</h1>
+        <h1 class="section__title">Список топ фильмов</h1>
+        <h3 style="margin-bottom: 50px;">Сортировки</h3> 
+        <button class="filter-button">От высокого рейтинга</button>
+        
+ 
+            
+        <div class="container">
+            <div class="films" id="films">
+            </div>
+        </div>
+        
     </section>
 
     <div class="modal modal1">
@@ -57,11 +69,11 @@
 
                     <div class="email">
                         <span for="email">Почта:</span>
-                        <input type="text" id="login" placeholder="example@gmail.com">                
+                        <input type="text" id="login-reg" placeholder="example@gmail.com">                
                     </div>
                     <div class="password">
                         <span for="pin">Пароль:</span>
-                        <input type="password" id="pin" placeholder="1234">    
+                        <input type="password" id="pin-reg" placeholder="1234">    
                     </div>   
                     <div class="password-confirmation">
                         <span for="pin">Повторите пароль:</span>
@@ -74,6 +86,20 @@
         </div>
     </div>
 
-    
+    <div class="modal modal-profile">
+        <div class="modal__main">
+            <img src="img/logo.png" alt="" class="logo-modal">           
+            <form>
+                <h2 class="modal__title">Список сохраненных фильмов</h2>
+                <div class="modal__container">
+                    <div class="favorite-film">
+                        <h3>title</h3>
+                    </div>
+                    
+                </div>
+            </form>
+            <button class="modal__close">&#10006;</button>
+        </div>
+    </div>    
 </body>
 </html>
