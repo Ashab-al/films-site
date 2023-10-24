@@ -15,17 +15,16 @@ fetch('https://kinopoiskapiunofficial.tech/api/v2.2/films/collections', {
         addFavoritesButton = document.querySelectorAll('.add-favorites');
     
         addFavoritesButton.forEach(button => {
-        button.addEventListener('click', () => {
-            console.log(button.textContent)
-            if (button.textContent == "Сохранить") {
-                button.innerText = "Фильм сохранен"
-                favourites.push(filmsData[button.value])
-            } else {
-                button.innerText = "Сохранить"
-                favourites.pop(filmsData[button.value])
-            }
+            button.addEventListener('click', () => {
+                if (button.textContent == "Сохранить") {
+                    button.innerText = "Фильм сохранен"
+                    favourites.push(filmsData[button.value])
+                } else {
+                    button.innerText = "Сохранить"
+                    favourites.pop(filmsData[button.value])
+                }
+            })
         })
-    })
 
     
     filterButton.addEventListener('click', () => {
